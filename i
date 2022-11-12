@@ -11,3 +11,14 @@ git commit -a -m "direct commit" (skip)
 git rm third.txt
 git mv first.txt first_.txt "change name"
 git rm --cached db.accdb (untrack)
+
+git log -p (dfrnce)
+git log --stat
+git log pretty=oneline
+git log pretty=short
+git log --since=2.days
+
+
+git restore --staged filename
+git checkout -- filename (modified)
+git checkout -f
