@@ -22,3 +22,16 @@ git log --since=2.days
 git restore --staged filename
 git checkout -- filename (modified)
 git checkout -f
+
+
+how to create remote
+git remote add origin git@github.com:MuzamalHussainButt/cmd.git
+git remote -v
+git push -u origin master
+
+
+make SSH key
+ssh-keygen -t rsa -b 4096 -C "gmail"
+eval $(ssh-agent -s)
+ssh-add ~/.ssh/id_rsa
+tail ~/.ssh/id_rsa.pub
