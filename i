@@ -7,4 +7,6 @@ touch .gitignore
 rm -rf .git (delete all)
 git diff (see the difference)
 git diff --staged
-git commit -a -m "direct commit"
+git commit -a -m "direct commit" (skip)
+git rm third.txt
+git mv first.txt first_.txt "change name"
