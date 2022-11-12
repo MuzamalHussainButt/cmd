@@ -35,3 +35,10 @@ ssh-keygen -t rsa -b 4096 -C "gmail"
 eval $(ssh-agent -s)
 ssh-add ~/.ssh/id_rsa
 tail ~/.ssh/id_rsa.pub
+
+git config --global alias.st status
+
+make branch
+git branch branchname
+gir checkout branchname
+git checkout -b develop
