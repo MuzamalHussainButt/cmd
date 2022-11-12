@@ -10,3 +10,4 @@ git diff --staged
 git commit -a -m "direct commit" (skip)
 git rm third.txt
 git mv first.txt first_.txt "change name"
+git rm --cached db.accdb (untrack)
