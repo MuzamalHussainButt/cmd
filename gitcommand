@@ -40,5 +40,164 @@ git config --global alias.st status
 
 make branch
 git branch branchname
-gir checkout branchname
+git checkout branchname
 git checkout -b develop
+
+got to masterbranch then-> git merge branchname
+
+
+
+
+🤗️INSTALL MYSQL
+CREATE USER 'postgres'@'localhost' IDENTIFIED BY 'postgres';
+GRANT CREATE, ALTER, DROP, INSERT, UPDATE, DELETE, SELECT, REFERENCES, RELOAD on *.* TO 'postgres'@'localhost' WITH GRANT OPTION;
+GRANT ALL PRIVILEGES ON *.* TO 'postgres'@'localhost' WITH GRANT OPTION;
+
+🤗️SET SSH-KEY
+ssh-keygen
+cat path
+
+🤗️PUSH METHOD
+echo "# hr" >> README.md
+git init  
+git add .
+git commit -m "add message"
+git remote add origin git@github.com:MuzamalHussainButt/hr.git
+git push -u -f origin main
+
+🤗️BRANCH METHOD
+git branch branc-name
+git checkout branc-name
+git merege branc-name
+
+
+🤗️change email and repo
+git config --global user.name " "
+git config --global user.email " "
+
+🤗️repo email & user
+git config user.name " "
+git config user.email " "
+
+🤗️To run sudo-composer
+sudo docker-compose build
+sudo docker-compose up
+
+🤗️install nvm
+https://www.digitalocean.com/community/tutorials/how-to-install-node-js-on-ubuntu-20-04
+
+🤗️run docker
+sudo docker-compose up
+sudo docker-compose run app bash
+
+🤗️pg issue
+sudo apt install libpq-dev
+
+🤗️graphql gem
+gem 'graphql'
+group :development do
+  gem 'graphiql-rails'
+ end
+ rails generate graphql:install
+ 
+ 🤗️Docker-Debug
+ sudo docker attach $(sudo docker-compose ps | grep "fieldfolio-app" | awk '{print $1}')
+DROP database
+rake db:drop RAILS_ENV=true
+rake db:create RAILS_ENV=true
+rake db:migrate RAILS_ENV=true
+
+
+🤗️query grpahiql
+uery GetPromotedCatalogsForSeller {
+  currentSeller { 
+    catalogs {
+      nodes {
+        id
+        name
+        repPromotionalTerritories{
+          AU
+          NZ
+        }
+      }
+    }
+  }
+}
+ query username {
+          currentUser{
+            email
+            activated
+            firstName
+          }
+        }
+
+🤗️create mutation
+mutation createorder($input: CreateOrderMutationInput!){
+  createOrder(input: $input){
+    order{
+      id
+      signatureUrl
+      buyerId
+      note
+      reference
+      hold
+      userFullName
+    }
+  }
+}
+{
+  "input": {
+    "catalogId":1,
+    "attributes": {
+      "note": "aaaaaaa44aaa",
+      "hold": true,
+      "category": "aaaa444aaaaaa",
+      "tos": "aaaaa",
+      "lines": {
+          "quantity": 1,
+          "productId": 1,
+          "varietyId": 1
+      }
+    }
+  }
+}
+
+🤗️destroy mutation
+mutation DestroyOrder($input: DestroyOrderMutationInput!){
+  destroyOrder(input: $input){
+    errors {
+            code
+            message
+            path
+          }
+    success
+    
+   
+  }
+}
+
+🤗️Factory boot
+FactoryBot.define do
+  factory :user do
+    name { Faker::Name.name }
+  end
+end
+
+ schema graphql update command
+bundle exec rake graphql:dump_schema
+
+add_column :student, :name, :string
+remove_column :student, :name
+
+🤗️space indeintation
+sudo docker-compose run app rubocop --auto-correct-all
+
+🤗️file_permission
+sudo chmod -R 777 /path/to/folder/foldername
+🤗️ roll back 
+rake db:rollback STEP=n
+
+
+
+log development
+tail -f log/development.log
