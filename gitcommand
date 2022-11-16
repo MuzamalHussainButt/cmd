@@ -201,3 +201,8 @@ rake db:rollback STEP=n
 
 log development
 tail -f log/development.log
+
+
+
+ModelAssociations
+model.reflect_on_all_association
